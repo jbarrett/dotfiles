@@ -9,6 +9,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Smart-Tabs'
 Bundle 'spacehi.vim'
 Bundle 'taglist.vim'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'current-func-info.vim'
 
 filetype plugin indent on
