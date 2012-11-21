@@ -1,0 +1,9 @@
+[user]
+	email = johna.barrett@gmail.com
+	name = John Barrett
+[core]
+	editor = vim
+[color]
+	ui = true
+[merge]
+	tool = vimdiff
