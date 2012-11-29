@@ -30,6 +30,8 @@ set mouse=n
 set number
 set ttymouse=xterm2
 
+set nohlsearch
+
 au BufNewFile,BufRead *.cgi set filetype=perl
 au BufNewFile,BufRead *.fcgi set filetype=perl
 au BufNewFile,BufRead *.pde,*.ino set filetype=c
