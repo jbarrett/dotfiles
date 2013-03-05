@@ -2,6 +2,7 @@ use warnings;
 
 load_plugin qw(
     Colors
+    Interrupt
     Completion
     CompletionDriver::INC
     CompletionDriver::LexEnv
@@ -11,5 +12,6 @@ load_plugin qw(
     History
     LexEnv
     ReadLineHistory
+    Refresh
 );
 
