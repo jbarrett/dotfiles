@@ -13,6 +13,8 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'current-func-info.vim'
 Bundle 'chrisbra/Recover.vim'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'ciaranm/detectindent'
+Bundle 'motemen/xslate-vim'
 
 filetype plugin indent on
 
@@ -42,12 +44,18 @@ autocmd Filetype ruby setlocal ts=2 sw=2 sts=0 noexpandtab
 autocmd Filetype eruby setlocal ts=2 sw=2 sts=0 noexpandtab
 autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
 
+autocmd BufReadPost * :DetectIndent
+
 let g:spacehi_spacecolor="ctermfg=red cterm=underline"
 let g:spacehi_tabcolor="ctermfg=blue cterm=underline"
 
 let g:Powerline_symbols = 'fancy'
 
 let Tlist_Auto_Open = 1
+
+let g:detectindent_preferred_indent = 4
+let g:detectindent_max_lines_to_analyse = 1024
+let g:detectindent_preferred_expandtab = 1
 
 autocmd syntax * SpaceHi
 
