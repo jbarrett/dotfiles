@@ -73,3 +73,7 @@ if &term =~ '^screen'
 endif
 
 nnoremap <silent> <F8> :TlistToggle<CR>
+
+hi MatchParen NONE
+hi MatchParen term=underline cterm=underline gui=underline
+
