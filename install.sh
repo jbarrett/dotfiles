@@ -29,7 +29,7 @@ FILES=(
 )
 
 for i in "${FILES[@]}" ; do
-    if [ -f ~/"$i" ] && [ ! -L ~/"$i" ] ; then
+    if [ -e ~/"$i" ] && [ ! -L ~/"$i" ] ; then
         mv ~/"$i" "$BACKUPDIR"/"$i"-"$NOW"
     fi
     ln -sf "$BASEDIR"/"$i" ~/
