@@ -1,0 +1,5 @@
+alias mc="mc -d"
+alias yt="quvi --exec 'mplayer %u'"
+alias youtube="quvi --exec 'mplayer %u'"
+alias vi=vim
+
