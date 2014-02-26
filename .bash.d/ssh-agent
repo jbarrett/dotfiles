@@ -1,0 +1,8 @@
+ME=$(/usr/bin/whoami)
+mkdir -p -m0700 /tmp/ssh-$ME/
+pgrep -U $ME ssh-agent > /dev/null
+if [ "$?" -ne "0" ] ; then
+    ssh-agent -a /tmp/ssh-$ME/agent
+fi
+export SSH_AUTH_SOCK=/tmp/ssh-$ME/agent
+
