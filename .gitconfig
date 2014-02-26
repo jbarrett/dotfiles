@@ -1,8 +1,9 @@
 [user]
-	email = johna.barrett@gmail.com
+	email = john@jbrt.org
 	name = John Barrett
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
 [color]
 	ui = true
 [merge]
