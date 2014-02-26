@@ -14,7 +14,7 @@ for i in "${DIRS[@]}" ; do
     mkdir -p "$i"
 done
 
-ln -sf .config/lilyterm/default.conf ~/.config/lilyterm/
+ln -sf "$BASEDIR"/.config/lilyterm/default.conf ~/.config/lilyterm/
 
 FILES=(
     '.bash.d'
