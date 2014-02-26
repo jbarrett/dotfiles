@@ -34,3 +34,6 @@ for i in "${FILES[@]}" ; do
     fi
     ln -sf "$BASEDIR"/"$i" ~/
 done
+
+vim +BundleInstall +qa
+
