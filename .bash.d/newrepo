@@ -1,0 +1,10 @@
+newrepo() {
+    repo=$1
+    if [ -z $repo ] ; then
+        echo "No repository name specified"
+        return 1
+    fi
+    [[ ! $repo =~ \.git$ ]] && repo="${repo}.git"
+    sudo -u git git init --bare "/home/git/${repo}"
+}
+
