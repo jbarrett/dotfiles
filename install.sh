@@ -24,6 +24,7 @@ FILES=(
     '.bash_profile'
     '.gitconfig'
     '.gitignore_global'
+    '.inputrc'
     '.tmux.conf'
     '.vimrc'
 )
