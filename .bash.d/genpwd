@@ -1,5 +1,5 @@
 genpwd() {                                                                            
     printf "/"                                                                        
-    openssl rand -base64 32 | sed 's/.$//'
+    openssl rand -base64 32 | sed -e 's/.$/!/' -e s'/\//!/g'
 }
 
