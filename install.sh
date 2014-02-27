@@ -5,15 +5,7 @@ BASEDIR=~/dotfiles
 NOW=$(date +%Y%m%d%H%M%S)
 
 mkdir -p "$BACKUPDIR"
-
-DIRS=(
-    '.config/lilyterm'
-)
-
-for i in "${DIRS[@]}" ; do
-    mkdir -p "$i"
-done
-
+mkdir -p ~/.config/lilyterm/
 ln -sf "$BASEDIR"/.config/lilyterm/default.conf ~/.config/lilyterm/
 
 FILES=(
@@ -35,6 +27,15 @@ for i in "${FILES[@]}" ; do
     fi
     ln -sf "$BASEDIR"/"$i" ~/
 done
+
+mkdir -p ~/.vim/bundle
+cd ~/.vim/bundle
+if [ -d ~/.vim/bundle/vundle ] ; then
+    cd ~/.vim/bundle/vundle
+    git pull
+else
+    git clone --depth=1 https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+fi
 
 vim +BundleInstall +qa
 
