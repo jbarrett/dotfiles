@@ -1,0 +1,4 @@
+HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
+HISTCONTROL=ignoreboth
+shopt -s histappend
+
