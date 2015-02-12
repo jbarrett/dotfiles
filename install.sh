@@ -5,8 +5,6 @@ BASEDIR=~/dotfiles
 NOW=$(date +%Y%m%d%H%M%S)
 
 mkdir -p "$BACKUPDIR"
-mkdir -p ~/.config/lilyterm/
-ln -sf "$BASEDIR"/.config/lilyterm/default.conf ~/.config/lilyterm/
 
 FILES=(
     '.bash.d'
