@@ -37,6 +37,7 @@ set nohlsearch
 au BufNewFile,BufRead *.cgi set filetype=perl
 au BufNewFile,BufRead *.fcgi set filetype=perl
 au BufNewFile,BufRead *.pde,*.ino set filetype=c
+au BufNewFile,BufRead *.md set filetype=markdown
 
 autocmd Filetype ruby setlocal ts=2 sw=2 sts=0 noexpandtab
 autocmd Filetype eruby setlocal ts=2 sw=2 sts=0 noexpandtab
