@@ -8,7 +8,6 @@ Bundle 'gmarik/vundle'
 
 Bundle 'Smart-Tabs'
 Bundle 'spacehi.vim'
-Bundle 'taglist.vim'
 Bundle 'current-func-info.vim'
 Bundle 'chrisbra/Recover.vim'
 Bundle 'airblade/vim-gitgutter'
