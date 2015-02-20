@@ -2,7 +2,7 @@ parse_git_branch() {
     local DIRTY STATUS
     STATUS=$(git status 2>/dev/null)
     [ $? -eq 128 -o $? -eq 127 ] && return
-    [[ "$STATUS" == *'working directory clean'* ]] || DIRTY=' *'
+    [[ "$STATUS" == *'working directory clean'* || "$STATUS" == *'nothing to commit'* ]] || DIRTY=' *'
     echo "($(git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* //')$DIRTY)"
 }
 
