@@ -3,4 +3,7 @@ alias yt="quvi --exec 'mplayer %u'"
 alias youtube="quvi --exec 'mplayer %u'"
 alias vi=vim
 alias dosbox="dosbox -conf dosbox.conf ."
+alias gti='git'
+alias igt='git'
+alias got='git'
 
