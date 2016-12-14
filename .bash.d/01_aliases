@@ -7,3 +7,10 @@ alias gti='git'
 alias igt='git'
 alias got='git'
 
+if [ -f /etc/slackware-version ] ; then
+    alias sbopkg="sudo sbopkg"
+    alias pkgtool="sudo pkgtool"
+    alias slackpkg="sudo slackpkg"
+    alias upgradepkg="sudo upgradepkg --reinstall --install-new"
+    alias installpkg="sudo installpkg"
+fi
