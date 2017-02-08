@@ -17,6 +17,7 @@ FILES=(
     '.inputrc'
     '.tmux.conf'
     '.vimrc'
+    '.replyrc'
 )
 
 for i in "${FILES[@]}" ; do
