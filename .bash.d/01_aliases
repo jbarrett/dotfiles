@@ -13,4 +13,5 @@ if [ -f /etc/slackware-version ] ; then
     alias slackpkg="sudo slackpkg"
     alias upgradepkg="sudo upgradepkg --reinstall --install-new"
     alias installpkg="sudo installpkg"
+    alias removepkg="sudo removepkg"
 fi
