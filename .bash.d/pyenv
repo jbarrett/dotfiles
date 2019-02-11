@@ -1,0 +1,16 @@
+if [ ! -d ~/.pyenv ]; then
+    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+fi
+
+#pushd ~/.pyenv > /dev/null
+#git fetch --all > /dev/null 2>&1
+#git checkout $(git describe --abbrev=0 --tags) > /dev/null 2>&1
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+#popd > /dev/null
