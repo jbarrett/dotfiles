@@ -7,7 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'Smart-Tabs'
-Bundle 'auto_mkdir2'
+Bundle 'Carpetsmoker/auto_mkdir2.vim'
 Bundle 'spacehi.vim'
 Bundle 'current-func-info.vim'
 Bundle 'chrisbra/Recover.vim'
