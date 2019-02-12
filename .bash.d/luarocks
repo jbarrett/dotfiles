@@ -1,3 +1,3 @@
 export LUA_PATH='/home/fuzzix/.luarocks/share/lua/5.1/?.lua;/home/fuzzix/.luarocks/share/lua/5.1/?/init.lua;/usr/share/lua/5.1/?.lua;/usr/share/lua/5.1/?/init.lua;./?.lua;/usr/lib64/lua/5.1/?.lua;/usr/lib64/lua/5.1/?/init.lua'
 export LUA_CPATH='/home/fuzzix/.luarocks/lib/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;./?.so;/usr/lib64/lua/5.1/?.so;/usr/lib64/lua/5.1/loadall.so'
-export PATH='/home/fuzzix/.luarocks/bin:/usr/bin:/home/fuzzix/.rakudobrew/bin:/home/fuzzix/perl5/perlbrew/bin:/home/fuzzix/perl5/perlbrew/perls/perl-5.26.1/bin:/usr/local/bin:/bin:/usr/games:/usr/lib64/kde4/libexec:/usr/lib64/qt/bin:/usr/lib64/qt5/bin:/usr/share/texmf/bin:/sbin:/usr/sbin:/usr/bin/32/:/usr/local/sbin:/home/fuzzix/bin:/home/fuzzix/.rvm/bin:/home/fuzzix/z88dk/bin/:/home/fuzzix/bin/zxbasic/'
+export PATH=/home/fuzzix/.luarocks/bin:$PATH
