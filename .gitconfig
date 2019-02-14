@@ -10,3 +10,6 @@
 	tool = vimdiff
 [status]
 	showUntrackedFiles = no
+[diff]
+	indentheuristic = true
+	compactionHeuristic = 1
