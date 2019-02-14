@@ -3,4 +3,3 @@ for i in ~/.bash.d/* ; do
         . "$i"
     fi
 done
-
