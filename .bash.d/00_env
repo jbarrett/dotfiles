@@ -1,4 +1,4 @@
-export PATH=$PATH:/sbin:/usr/sbin:/usr/bin/32/:/usr/local/sbin:~/bin
+export PATH=~/bin:$PATH:/sbin:/usr/sbin:/usr/bin/32/:/usr/local/sbin
 export HISTSIZE=1500
 export HISTCONTROL=ignoreboth
 export LESS="-F -X -R"
