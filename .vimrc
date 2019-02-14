@@ -57,6 +57,8 @@ let g:detectindent_preferred_indent = 4
 let g:detectindent_max_lines_to_analyse = 1024
 let g:detectindent_preferred_expandtab = 1
 
+let perl_sub_signatures = 1
+
 autocmd syntax * SpaceHi
 
 set t_Co=256
