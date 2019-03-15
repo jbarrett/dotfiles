@@ -7,6 +7,10 @@ alias gti='git'
 alias igt='git'
 alias got='git'
 
+if ! [ -x "$(which ack 2>/dev/null)" ] ; then
+    [ -x "$(which ag)" ] && alias ack=ag
+fi
+
 if [ -f /etc/slackware-version ] ; then
     alias sbopkg="sudo sbopkg"
     alias pkgtool="sudo pkgtool"
