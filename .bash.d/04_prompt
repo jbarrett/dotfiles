@@ -1,11 +1,18 @@
 parse_git_branch() {
-    local DIRTY STATUS
+    local DIRTY STATUS BRANCH UPSTREAM_DIFF
     STATUS=$(git status 2>/dev/null)
     [ $? -eq 128 -o $? -eq 127 ] && return
+
     [[ "$STATUS" == *'working directory clean'* || "$STATUS" == *'nothing to commit'* ]] || DIRTY=' *'
+
+    BRANCH=$( git rev-parse --abbrev-ref HEAD )
+    [ "$BRANCH" != "HEAD" ] && UPSTREAM_DIFF=$(git diff $BRANCH..origin/$BRANCH 2>&1)
+    if [ ! -z "$UPSTREAM_DIFF" ] ; then
+        [ "$DIRTY" ] && DIRTY="$DIRTY↑" || DIRTY=' ↑'
+    fi
+
     echo "($(git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* //')$DIRTY)"
 }
 
 export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;36m\]\h\[\e[m\]:\[\e[1;34m\]\w\[\e[m\]\[\e[m\]$(parse_git_branch)\$ '
-
 
