@@ -5,7 +5,7 @@ parse_git_branch() {
 
     [[ "$STATUS" == *'working directory clean'* || "$STATUS" == *'nothing to commit'* ]] || DIRTY=' *'
 
-    BRANCH=$( git rev-parse --abbrev-ref HEAD )
+    BRANCH=$( git rev-parse --abbrev-ref HEAD 2>/dev/null )
     TRACKING=$( git rev-parse --abbrev-ref $BRANCH@{u} 2>/dev/null ) || TRACKING="origin/$BRANCH"
     [ "$BRANCH" != "HEAD" ] && UPSTREAM_DIFF=$(git diff $BRANCH..$TRACKING 2>&1)
     if [ ! -z "$UPSTREAM_DIFF" ] ; then
