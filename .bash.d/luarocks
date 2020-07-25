@@ -1,3 +1,1 @@
-export LUA_PATH='/home/fuzzix/.luarocks/share/lua/5.1/?.lua;/home/fuzzix/.luarocks/share/lua/5.1/?/init.lua;/usr/share/lua/5.1/?.lua;/usr/share/lua/5.1/?/init.lua;./?.lua;/usr/lib64/lua/5.1/?.lua;/usr/lib64/lua/5.1/?/init.lua'
-export LUA_CPATH='/home/fuzzix/.luarocks/lib/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;./?.so;/usr/lib64/lua/5.1/?.so;/usr/lib64/lua/5.1/loadall.so'
-export PATH=/home/fuzzix/.luarocks/bin:$PATH
+eval $(luarocks path --bin)
